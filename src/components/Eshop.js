@@ -28,20 +28,7 @@ const Eshop = () => {
     },
   ]);
 
-  const [cart, setCart] = useState([
-    {
-      sku: 1,
-      qty: 2,
-      name: "iPhone 14 Pro Max",
-      price: 1500,
-    },
-    {
-      sku: 3,
-      qty: 1,
-      name: "iPad Pro",
-      price: 1300,
-    },
-  ]);
+  const [cart, setCart] = useState([]);
 
   return (
     <>
