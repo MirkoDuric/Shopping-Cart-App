@@ -13,7 +13,7 @@ export const increase = (cart, product, setCart) => {
   const updatedCart = cart.map((item) => {
     if (item.sku === product.sku) {
       alreadyInCart = true;
-      return { ...item, qty: item.qty + 1 };
+      return { ...item, qty: Math.min(item.qty + 1, product.stock) };
     }
     return item;
   });
